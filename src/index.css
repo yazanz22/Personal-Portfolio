@@ -1,0 +1,1014 @@
+/*Color combo: #4A4A4A #CBCBCB #FFFFE3 #6D8196*/
+
+* {
+    margin: 0;
+    gap: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+body {
+    background-color: #CBCBCB;
+}
+
+.navbar {
+    background-color: #6D8196;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 0;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    transform: translateY(-3px);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding-top: 140px;
+    min-height: 100vh;
+}
+
+.pfp {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #6D8196;
+}
+
+.home h3 {
+    color: #4A4A4A;
+}
+
+p {
+    color: #4A4A4A;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.home button {
+    height: 50px;
+    width: 110px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-button {
+    color: white;
+    background-color: #6D8196;
+}
+
+.contact-button {
+    color: white;
+    background-color: #4A4A4A;
+}
+
+.experience-button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 100px 20px;
+    border-bottom: 2px solid #CBCBCB;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+.about h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.about p {
+    padding: 70px;
+    margin: 0 auto;
+    color: black;
+    font-size: 18px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.education h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.education-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+}
+
+.education-right {
+    display: flex;
+    flex: 0.8;
+}
+
+.university {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.university:hover {
+    transform: translateY(-2px);
+}
+
+.PSUT-logo {
+    max-width: 80px;
+    margin: 10px;
+}
+
+.university h2 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.university h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.university p {
+    margin: 10px;
+}
+
+.education-flexbox {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-flexbox:hover {
+    transform: translateY(-2px);
+}
+
+.education-flexbox h3 {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.certs-gridbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.certs-gridbox a {
+    text-decoration: none;
+}
+
+.courses-gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.certs-griditem {
+    background-color: #CBCBCB;
+    border-radius: 15px;
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.courses-griditem {
+    background-color: #CBCBCB;
+    border-radius: 15px;
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.certs-griditem a {
+    text-decoration: none;
+}
+
+.certs-griditem p, .courses-griditem p {
+    margin: 0;
+    color: black;
+    font-weight: 500;
+}
+
+.certs-griditem:hover {
+    background-color: #6D8196;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.certs-griditem:hover p {
+    color: white;
+}
+
+.courses-griditem:hover {
+    background-color: #6D8196;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.courses-griditem:hover p {
+    color: white;
+}
+
+.experience h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.experience-container {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 4cap 0;
+}
+
+.timeline-line {
+    position: absolute;
+    width: 4px;
+    background-color: #4A4A4A;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.experience-item {
+    padding: 20px 60px;
+    position: relative;
+    width: 50%;
+}
+
+.left {
+    left: 0;
+    text-align: left;
+}
+
+.right {
+    left: 50%;
+    text-align: left;
+}
+
+.co-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.co-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.co-name h3, .co-name p {
+    margin: 0;
+}
+
+.co-name i {
+    margin-right: 5px;
+    color: #6D8196;
+}
+
+.experience-content {
+    color: black;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.experience-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.experience-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-content:hover a {
+    color: #6D8196;
+}
+
+.experience-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 4px solid #6D8196;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.experience-item:hover::after {
+    background-color: #6D8196;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-item.left::after {
+    right: -12px;
+}
+
+.experience-item.right::after {
+    left: -12px;
+}
+
+.projects h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.experience-item {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.slideshow-wrapper {
+    position: relative;
+    width: 750px; 
+    margin: 50px auto;
+    display: block;
+}
+
+.project-slideshow {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-slideshow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.project-slideshow-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 300%;
+}
+
+.project-slideshow-container i {
+    font-size: 50px;
+    color: rgb(90, 90, 90);
+    margin: 20px;
+}
+
+.project-slideshow-container i:hover {
+    color: #6D8196;
+}
+
+.project1, .project2, .project3 {
+    width: 33.333%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    color: black;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    z-index: 100;
+}
+
+.arrow-btn:hover {
+    color: #6D8196;
+    transform: translateY(-50%) scale(1.2);
+    background: transparent;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, width 0.3s ease;
+}
+
+.dot.active {
+    background-color: #6D8196;
+    width: 25px;
+    border-radius: 10px;
+}
+
+.dot:hover {
+    background-color: #4A4A4A;
+}
+
+.contact h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card i {
+    font-size: 80px;
+    color: rgb(90, 90, 90);
+    margin-bottom: 20px;
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card:hover i {
+    color: #6D8196;
+}
+
+.contact-card p {
+    color: black;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.contact-container a {
+    text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+    .about p {
+        padding: 70px 200px;
+        font-size: 20px;
+    }
+    
+    .education-container {
+        max-width: 1200px;
+    }
+    
+    .experience-container {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about p {
+        padding: 50px;
+        font-size: 17px;
+    }
+    
+    .education-container {
+        max-width: 900px;
+    }
+    
+    .education-left {
+        flex: 1.5;
+    }
+    
+    .education-right {
+        flex: 1;
+    }
+    
+    .university h2 {
+        font-size: 26px;
+    }
+    
+    .university h3 {
+        font-size: 18px;
+    }
+    
+    .courses-gridbox {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .experience-container {
+        max-width: 1000px;
+    }
+    
+    .experience-item {
+        padding: 20px 40px;
+    }
+    
+    .experience-content {
+        padding: 25px;
+    }
+    
+    .slideshow-wrapper {
+        width: 650px;
+    }
+    
+    .project-slideshow {
+        width: 500px;
+        height: 350px;
+    }
+    
+    .arrow-btn {
+        top: 175px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 50px;
+    }
+    
+    .nav-links ul {
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        font-size: 16px;
+    }
+    
+    section {
+        padding: 80px 20px;
+    }
+    
+    .pfp {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .home h1 {
+        font-size: 28px;
+    }
+    
+    .home h3 {
+        font-size: 18px;
+    }
+    
+    .home p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    
+    .about h1, .education h1, .experience h1, .projects h1, .contact h1 {
+        font-size: 36px;
+    }
+    
+    .about p {
+        padding: 30px;
+        font-size: 16px;
+    }
+    
+    .education-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .education-left, .education-right {
+        flex: 1;
+    }
+    
+    .university {
+        padding: 30px;
+    }
+    
+    .university h2 {
+        font-size: 24px;
+    }
+    
+    .courses-gridbox {
+        grid-template-columns: 1fr;
+    }
+    
+    .courses-griditem, .certs-griditem {
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    /* Timeline becomes single column */
+    .timeline-line {
+        left: 30px;
+    }
+    
+    .experience-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+        left: 0 !important;
+        text-align: left;
+    }
+    
+    .experience-item.left::after,
+    .experience-item.right::after {
+        left: 22px;
+        right: auto;
+    }
+    
+    .experience-content {
+        padding: 20px;
+    }
+    
+    .co-name {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .slideshow-wrapper {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 20px;
+    }
+    
+    .project-slideshow {
+        width: 100%;
+        max-width: 450px;
+        height: 400px;
+    }
+    
+    .arrow-btn {
+        display: none;
+    }
+    
+    .project1, .project2, .project3 {
+        padding: 30px 20px;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-card {
+        width: 280px;
+        height: 280px;
+        margin: 15px;
+    }
+    
+    .contact-card p {
+        font-size: 16px;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .nav-links ul {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+    
+    .nav-links a {
+        font-size: 13px;
+    }
+    
+    section {
+        padding: 70px 15px;
+    }
+    
+    .pfp {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .home h1 {
+        font-size: 24px;
+    }
+    
+    .home h3 {
+        font-size: 16px;
+    }
+    
+    .home p {
+        font-size: 13px;
+    }
+    
+    .home-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .home button {
+        width: 100%;
+    }
+    
+    .about h1, .education h1, .experience h1, .projects h1, .contact h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .about p {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .university {
+        padding: 25px 20px;
+    }
+    
+    .university h2 {
+        font-size: 20px;
+    }
+    
+    .university h3 {
+        font-size: 16px;
+    }
+    
+    .PSUT-logo {
+        max-width: 60px;
+    }
+    
+    .education-flexbox h3 {
+        font-size: 18px;
+    }
+    
+    .courses-griditem, .certs-griditem {
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .timeline-line {
+        left: 20px;
+    }
+    
+    .experience-item {
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    
+    .experience-item.left::after,
+    .experience-item.right::after {
+        left: 12px;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .experience-content {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .experience-content h3 {
+        font-size: 16px;
+    }
+    
+    .experience-content ul {
+        padding-left: 20px;
+    }
+    
+    .experience-content li {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .slideshow-wrapper {
+        padding: 0 10px;
+    }
+    
+    .project-slideshow {
+        height: 450px;
+    }
+    
+    .arrow-btn {
+        display: none;
+    }
+    
+    .project1 h3, .project2 h3, .project3 h3 {
+        font-size: 18px;
+    }
+    
+    .project1 p, .project2 p, .project3 p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .project-slideshow-container i {
+        font-size: 40px;
+        margin: 15px;
+    }
+    
+    .contact-card {
+        width: 100%;
+        max-width: 280px;
+        height: 250px;
+        margin: 10px;
+    }
+    
+    .contact-card i {
+        font-size: 60px;
+    }
+    
+    .contact-card p {
+        font-size: 15px;
+        word-break: break-word;
+    }
+    
+    footer {
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-links a {
+        font-size: 11px;
+    }
+    
+    .home h1 {
+        font-size: 20px;
+    }
+    
+    .home h3 {
+        font-size: 14px;
+    }
+    
+    .about h1, .education h1, .experience h1, .projects h1, .contact h1 {
+        font-size: 24px;
+    }
+    
+    .about p {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .university h2 {
+        font-size: 18px;
+    }
+    
+    .project-slideshow {
+        height: 480px;
+    }
+}
