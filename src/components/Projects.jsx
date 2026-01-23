@@ -48,7 +48,7 @@ const Projects = () => {
       <div className="slideshow-wrapper">
         
         <button className="arrow-btn prev-btn" onClick={prevSlide}>
-          <i className="fa-solid fa-circle-arrow-left"></i>
+          <i className="fa-solid fa-arrow-left"></i>
         </button>
 
         <div className="project-slideshow" {...handlers}>
@@ -72,7 +72,7 @@ const Projects = () => {
         </div>
 
         <button className="arrow-btn next-btn" onClick={nextSlide}>
-          <i className="fa-solid fa-circle-arrow-right"></i>
+          <i className="fa-solid fa-arrow-right"></i>
         </button>
 
         <div className="dots-container">
