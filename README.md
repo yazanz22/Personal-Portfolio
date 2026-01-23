@@ -38,13 +38,12 @@ Ensure you have **Node.js** installed. You can check by typing 'node -v' in your
 
 **2. Installation**
 Clone the repository and install the necessary dependencies:
-# Clone the repository
 git clone [https://github.com/yazanz22/Personal-Portfolio.git](https://github.com/yazanz22/Personal-Portfolio.git)
 
-# Navigate to the project folder
+Navigate to the project folder:
 cd "Portfolio Site"
 
-# Install dependencies (creates node_modules)
+Install dependencies (creates node_modules):
 npm install
 
 **3. Run Development Server**
