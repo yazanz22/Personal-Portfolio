@@ -41,7 +41,7 @@ Clone the repository and install the necessary dependencies:
 git clone [https://github.com/yazanz22/Personal-Portfolio.git](https://github.com/yazanz22/Personal-Portfolio.git)
 
 Navigate to the project folder:
-cd "Portfolio Site"
+cd Portfolio-Portfolio
 
 Install dependencies (creates node_modules):
 npm install
