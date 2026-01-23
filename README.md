@@ -28,6 +28,7 @@ src/
 ├── App.jsx         # Main application assembly
 ├── main.jsx        # Entry point
 └── index.css       # Global styles and layout
+```
 
 ## ⚙️ Local Setup
 Follow these steps to get the project running on your own computer:
