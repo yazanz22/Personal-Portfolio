@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import { useSwipeable } from 'react-swipeable';
 
 const Projects = () => {
@@ -49,7 +48,7 @@ const Projects = () => {
       <div className="slideshow-wrapper">
         
         <button className="arrow-btn prev-btn" onClick={prevSlide}>
-          <FaArrowAltCircleLeft size={40} />
+          <i className="fa-solid fa-circle-arrow-left"></i>
         </button>
 
         <div className="project-slideshow" {...handlers}>
@@ -73,7 +72,7 @@ const Projects = () => {
         </div>
 
         <button className="arrow-btn next-btn" onClick={nextSlide}>
-          <FaArrowAltCircleRight size={40} />
+          <i className="fa-solid fa-circle-arrow-right"></i>
         </button>
 
         <div className="dots-container">
