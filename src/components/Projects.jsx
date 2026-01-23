@@ -16,8 +16,8 @@ const Projects = () => {
     },
     {
       title: "Personal Portfolio Website",
-      desc: "This right here lil bro.",
-      link: null
+      desc: "Responsive personal portfolio built with React + Vite. Features custom CSS styling, an interactive project slider using React Hooks, and a dynamic experience timeline to showcase my professional experience.",
+      link: "https://github.com/yazanz22/Personal-Portfolio/tree/main"
     }
   ];
 
