@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+import { useSwipeable } from 'react-swipeable';
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,17 +37,22 @@ const Projects = () => {
     setCurrentIndex(index);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => prevSlide(),
+    trackMouse: true
+  });
+
   return (
     <section className="projects" id="projects">
       <h1>Projects</h1>
       <div className="slideshow-wrapper">
         
-        {/* Previous Button */}
         <button className="arrow-btn prev-btn" onClick={prevSlide}>
-          <i className="fa-solid fa-chevron-left"></i>
+          <FaArrowAltCircleLeft size={40} />
         </button>
 
-        <div className="project-slideshow">
+        <div className="project-slideshow" {...handlers}>
           <div 
             className="project-slideshow-container"
             style={{ transform: `translateX(${-currentIndex * (100 / totalSlides)}%)` }}
@@ -65,12 +72,10 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Next Button */}
         <button className="arrow-btn next-btn" onClick={nextSlide}>
-          <i className="fa-solid fa-chevron-right"></i>
+          <FaArrowAltCircleRight size={40} />
         </button>
 
-        {/* Dots */}
         <div className="dots-container">
           {projects.map((_, index) => (
             <span 
