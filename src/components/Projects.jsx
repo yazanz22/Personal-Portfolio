@@ -11,14 +11,14 @@ const Projects = () => {
       link: "https://github.com/yazanz22/ESP32-Health-Monitor/tree/main"
     },
     {
-      title: "Taskify Website",
-      desc: "Taskify is a productivity dashboard featuring a dynamic task manager with smart sorting and a timestamped notes scratchpad. Built with React.js and PHP/MySQL, it offers full-stack functionality including user authentication, task prioritization, and persistent data storage via a local API.",
-      link: "https://github.com/yazanz22/Taskify-Tasks-Notes-Tracker"
-    },
-    {
       title: "Personal Portfolio Website",
       desc: "Responsive personal portfolio built with React + Vite. Features custom CSS styling, an interactive project slider using React Hooks, and a dynamic experience timeline to showcase my professional experience.",
       link: "https://github.com/yazanz22/Personal-Portfolio/tree/main"
+    },
+    {
+      title: "Taskify Website",
+      desc: "Taskify is a productivity dashboard featuring a dynamic task manager with smart sorting and a timestamped notes scratchpad. Built with React.js and PHP/MySQL, it offers full-stack functionality including user authentication, task prioritization, and persistent data storage via a local API.",
+      link: "https://github.com/yazanz22/Taskify-Tasks-Notes-Tracker"
     }
   ];
 
