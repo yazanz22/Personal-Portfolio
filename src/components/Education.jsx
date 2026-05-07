@@ -23,12 +23,16 @@ const Education = () => {
           <div className="education-flexbox"> 
             <h3>Relevant Coursework</h3>
             <div className="courses-gridbox">
-              <div className="courses-griditem"><p>Structured Programming (C)</p></div>
               <div className="courses-griditem"><p>Object Oriented Programming (C++)</p></div>
+              <div className="courses-griditem"><p>Data Structures & Intro to Algorithms</p></div>
               <div className="courses-griditem"><p>Intro to Software Engineering</p></div>
+              <div className="courses-griditem"><p>Visual Programming (C#)</p></div>
               <div className="courses-griditem"><p>Discrete Math</p></div>
               <div className="courses-griditem"><p>Digital Logic Design</p></div>
+              <div className="courses-griditem"><p>Assembly Language (8086)</p></div>
               <div className="courses-griditem"><p>Webpage Design & Programming</p></div>
+              <div className="courses-griditem"><p>Statistical Methods</p></div>
+              <div className="courses-griditem"><p>Structured Programming (C)</p></div>
             </div>
           </div>
         </div>
