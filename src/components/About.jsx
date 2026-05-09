@@ -26,17 +26,22 @@ const About = () => {
       <div className="about-container">
         <div className="about-text">
           <p>
-            I am a Software Engineering student at Princess Sumaya University for Technology with a focus on developing
-            technical solutions that address real-world complexities. My experience ranges from building Java-based software
-            at GBM to creating live financial tracking tools at Montfort and designing land restoration models for WADI. I
-            enjoy the challenge of turning technical requirements into efficient, scalable code.
+            I'm a Software Engineering student at Princess Sumaya University for Technology with a background that spans
+            more than just code. My work has taken me from building financial tracking systems at a commodity trading firm
+            in Dubai, to creating land restoration models for an NGO in Jordan, to managing international humanitarian
+            partnerships with UNICEF and UNHCR.
             <br /><br />
-            Beyond my core technical stack in Python, C++, and React, I bring a global perspective to my work.
-            Having lived in four countries, I have developed a high degree of adaptability and the ability to
-            communicate effectively across diverse teams. This international mindset has also driven my leadership
-            efforts, where I pioneered the expansion of Students for Refugees and managed significant fundraising
-            operations. I am eager to apply this combination of technical skill and cross-cultural experience to
-            an AI or Software Engineering internship.
+            My projects range from a health monitor that tracks vitals in real time, to a full-stack productivity tool,
+            to a responsive portfolio built from scratch. I enjoy the challenge of taking a technical problem from idea
+            to something that actually works and is worth using.
+            <br /><br />
+            Beyond the technical side, I've led fundraising efforts that raised over $90,000 for charity and pioneered
+            the first international branch of Students for Refugees, overseeing operations across London, Amman, and
+            Kathmandu. Outside of all of that, I'm an award-winning photographer and a fluent Arabic and English speaker
+            working on my Mandarin.
+            <br /><br />
+            I'm currently looking for software engineering or AI internship opportunities where I can bring both
+            technical depth and a global perspective to the table.
           </p>
         </div>
         <div className="about-skills">
