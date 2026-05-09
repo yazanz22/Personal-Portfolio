@@ -121,6 +121,51 @@ p {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+button.cv-button {
+    color: #4A4A4A;
+    background-color: white;
+    border: 2px solid #4A4A4A;
+}
+
+button.cv-button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+.hamburger-line.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-line.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 section {
     padding: 100px 20px;
     border-bottom: 2px solid #CBCBCB;
@@ -683,13 +728,34 @@ section:last-of-type {
     .navbar {
         height: 50px;
     }
-    
-    .nav-links ul {
-        gap: 15px;
+
+    .hamburger {
+        display: flex;
     }
-    
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #6D8196;
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    .nav-links.nav-open {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
     .nav-links a {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     section {
@@ -822,22 +888,6 @@ section:last-of-type {
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        height: auto;
-        padding: 10px 0;
-    }
-    
-    .nav-links ul {
-        gap: 8px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px;
-    }
-    
-    .nav-links a {
-        font-size: 13px;
-    }
-    
     section {
         padding: 70px 15px;
     }
@@ -989,10 +1039,6 @@ section:last-of-type {
 }
 
 @media (max-width: 360px) {
-    .nav-links a {
-        font-size: 11px;
-    }
-    
     .home h1 {
         font-size: 20px;
     }
