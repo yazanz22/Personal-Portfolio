@@ -549,7 +549,7 @@ section:last-of-type {
     background: transparent;
     border: none;
     font-size: 40px;
-    color: white;
+    color: #111111;
     cursor: pointer;
     transition: color 0.3s, transform 0.2s;
     z-index: 100;
