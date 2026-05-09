@@ -2,16 +2,20 @@ import React from 'react';
 
 const skills = [
   {
+    category: "Programming",
+    items: ["C++", "Python", "Java", "C", "JavaScript", "Dart", "PHP", "MySQL", "HTML", "CSS"]
+  },
+  {
+    category: "Frameworks & Tools",
+    items: ["React.js", "Flutter", "Git", "GitHub", "Vite", "Microsoft 365", "Adobe Creative Cloud", "AI-Assisted Development"]
+  },
+  {
     category: "Languages",
-    items: ["Python", "C++", "C", "C#", "Java", "JavaScript", "Assembly (8086)"]
+    items: ["English", "Arabic", "Chinese (Limited Proficiency)"]
   },
   {
-    category: "Web & Frameworks",
-    items: ["React", "HTML/CSS", "PHP", "Vite"]
-  },
-  {
-    category: "Tools",
-    items: ["Git", "MySQL", "VBA & Excel", "Microsoft Project"]
+    category: "Other",
+    items: ["Photography (Award-Winning)", "Incoterms 2020"]
   }
 ];
 
