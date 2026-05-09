@@ -1,4 +1,4 @@
-/*Color combo: #4A4A4A #CBCBCB #FFFFE3 #6D8196*/
+/*Color combo: #111111 #E5E7EB #FFFFE3 #059669*/
 
 * {
     margin: 0;
@@ -8,11 +8,11 @@
 }
 
 body {
-    background-color: #CBCBCB;
+    background-color: #FFFFFF;
 }
 
 .navbar {
-    background-color: #6D8196;
+    background-color: #059669;
     top: 0;
     box-sizing: border-box;
     width: 100%;
@@ -74,15 +74,15 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #6D8196;
+    border: 2px solid #059669;
 }
 
 .home h3 {
-    color: #4A4A4A;
+    color: #111111;
 }
 
 p {
-    color: #4A4A4A;
+    color: #111111;
 }
 
 .home-buttons {
@@ -101,12 +101,12 @@ p {
 
 .experience-button {
     color: white;
-    background-color: #6D8196;
+    background-color: #059669;
 }
 
 .contact-button {
     color: white;
-    background-color: #4A4A4A;
+    background-color: #111111;
 }
 
 .experience-button:hover {
@@ -122,9 +122,9 @@ p {
 }
 
 button.cv-button {
-    color: #4A4A4A;
+    color: #111111;
     background-color: white;
-    border: 2px solid #4A4A4A;
+    border: 2px solid #111111;
 }
 
 button.cv-button:hover {
@@ -168,7 +168,7 @@ button.cv-button:hover {
 
 section {
     padding: 100px 20px;
-    border-bottom: 2px solid #CBCBCB;
+    border-bottom: 2px solid #E5E7EB;
 }
 
 section:last-of-type {
@@ -302,7 +302,7 @@ section:last-of-type {
 }
 
 .certs-griditem {
-    background-color: #CBCBCB;
+    background-color: #E5E7EB;
     border-radius: 15px;
     font-size: 13px;
     padding: 10px;
@@ -313,7 +313,7 @@ section:last-of-type {
 }
 
 .courses-griditem {
-    background-color: #CBCBCB;
+    background-color: #E5E7EB;
     border-radius: 15px;
     font-size: 13px;
     padding: 10px;
@@ -334,7 +334,7 @@ section:last-of-type {
 }
 
 .certs-griditem:hover {
-    background-color: #6D8196;
+    background-color: #059669;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -345,7 +345,7 @@ section:last-of-type {
 }
 
 .courses-griditem:hover {
-    background-color: #6D8196;
+    background-color: #059669;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -371,7 +371,7 @@ section:last-of-type {
 .timeline-line {
     position: absolute;
     width: 4px;
-    background-color: #4A4A4A;
+    background-color: #111111;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -413,7 +413,7 @@ section:last-of-type {
 
 .co-name i {
     margin-right: 5px;
-    color: #6D8196;
+    color: #059669;
 }
 
 .experience-content {
@@ -436,7 +436,7 @@ section:last-of-type {
 }
 
 .experience-content:hover a {
-    color: #6D8196;
+    color: #059669;
 }
 
 .experience-item::after {
@@ -445,7 +445,7 @@ section:last-of-type {
     width: 16px;
     height: 16px;
     background-color: white;
-    border: 4px solid #6D8196;
+    border: 4px solid #059669;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -453,7 +453,7 @@ section:last-of-type {
 }
 
 .experience-item:hover::after {
-    background-color: #6D8196;
+    background-color: #059669;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -526,7 +526,7 @@ section:last-of-type {
 }
 
 .project-slideshow-container i:hover {
-    color: #6D8196;
+    color: #059669;
 }
 
 .project1, .project2, .project3 {
@@ -556,7 +556,7 @@ section:last-of-type {
 }
 
 .arrow-btn:hover {
-    color: #6D8196;
+    color: #059669;
     transform: translateY(-50%) scale(1.2);
     background: transparent;
 }
@@ -587,13 +587,13 @@ section:last-of-type {
 }
 
 .dot.active {
-    background-color: #6D8196;
+    background-color: #059669;
     width: 25px;
     border-radius: 10px;
 }
 
 .dot:hover {
-    background-color: #4A4A4A;
+    background-color: #111111;
 }
 
 .contact h1 {
@@ -638,7 +638,7 @@ section:last-of-type {
 }
 
 .contact-card:hover i {
-    color: #6D8196;
+    color: #059669;
 }
 
 .contact-card p {
@@ -739,7 +739,7 @@ section:last-of-type {
         top: 50px;
         left: 0;
         width: 100%;
-        background-color: #6D8196;
+        background-color: #059669;
         padding: 15px 0;
         z-index: 999;
     }
