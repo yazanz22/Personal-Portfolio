@@ -49,9 +49,8 @@ const Experience = () => {
             <div className="experience-content">
               <div className="co-name">
                 <h3>
-                  {exp.company}
                   <a href={exp.link} target="_blank" rel="noreferrer" className="company-link">
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    {exp.company} <i className="fa-solid fa-arrow-up-right"></i>
                   </a>
                 </h3>
                 <p><i className="fa-solid fa-location-dot"></i>{exp.location}</p>
