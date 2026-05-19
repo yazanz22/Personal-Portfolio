@@ -48,9 +48,12 @@ const Experience = () => {
           <div key={index} className={`experience-item ${index % 2 === 0 ? 'left' : 'right'}`}>
             <div className="experience-content">
               <div className="co-name">
-                <a href={exp.link} target="_blank" rel="noreferrer">
-                  <h3>{exp.company}</h3>
-                </a>
+                <h3>
+                  {exp.company}
+                  <a href={exp.link} target="_blank" rel="noreferrer" className="company-link">
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </h3>
                 <p><i className="fa-solid fa-location-dot"></i>{exp.location}</p>
               </div>
               <p>{exp.role}</p>

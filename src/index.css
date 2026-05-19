@@ -457,6 +457,19 @@ section:last-of-type {
     color: inherit;
 }
 
+.company-link {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #3d8199;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    vertical-align: middle;
+}
+
+.company-link:hover {
+    opacity: 1;
+}
+
 .co-name h3, .co-name p {
     margin: 0;
 }
