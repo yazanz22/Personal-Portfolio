@@ -9,9 +9,8 @@ const Experience = () => {
       role: "Head of International Relations | 07/2023 - Present",
       points: [
         "Facilitate high-level strategic meetings with global organizations, including UNICEF and UNHCR, to identify and develop partnership opportunities.",
-        "Oversee operations for three international branches across London (UK), Amman (Jordan), and Kathmandu (Nepal), ensuring consistent organizational standards.",
-        "Pioneered the creation of SFR's first international branch, located in Amman, Jordan, opening the way for more international branches to open.",
-        "Filed, successfully, for form SS-4 and form 1023-EZ for 501(c)(3) for tax exemption status.",
+        "Pioneered the creation of SFR's first international branch in Amman, Jordan, and now oversee operations across branches in London (UK), Amman (Jordan), and Kathmandu (Nepal).",
+        "Obtained 501(c)(3) tax-exempt status and ensure compliance with its legal and financial obligations.",
         "Participated in countless food drives aimed at providing cultural food for new refugees, usually providing for about 350 refugees per food drive."
       ]
     },
