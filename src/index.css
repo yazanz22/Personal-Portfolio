@@ -464,9 +464,9 @@ section:last-of-type {
 }
 
 .company-link i {
-    margin-left: 6px;
-    font-size: 14px;
-    vertical-align: middle;
+    margin-left: 4px;
+    font-size: 10px;
+    vertical-align: super;
 }
 
 .company-arrow {
