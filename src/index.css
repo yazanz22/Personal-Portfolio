@@ -469,6 +469,11 @@ section:last-of-type {
     vertical-align: middle;
 }
 
+.company-arrow {
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
 .company-link:hover {
     color: #3d8199;
 }
