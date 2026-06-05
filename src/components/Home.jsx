@@ -1,6 +1,6 @@
 import React from 'react';
 import profilePic from '../assets/pic111.jpeg';
-import cvPdf from '../assets/Yazan Zarka - CV - 20260130.pdf';
+import cvPdf from '../assets/Yazan Zarka - CV - 20260601.pdf';
 
 const Home = () => {
   return (
