@@ -1,6 +1,5 @@
 import React from 'react';
 import profilePic from '../assets/pic111.jpeg';
-import cvPdf from '../assets/Yazan Zarka - CV - 20260601.pdf';
 
 const Home = () => {
   return (
@@ -18,7 +17,7 @@ const Home = () => {
         <a href="#contact">
           <button className="contact-button">Contact Me</button>
         </a>
-        <a href={cvPdf} download="Yazan_Zarka_CV.pdf">
+        <a href="/Yazan Zarka - CV.pdf" download="Yazan Zarka - CV.pdf">
           <button className="cv-button">Download CV</button>
         </a>
       </div>
