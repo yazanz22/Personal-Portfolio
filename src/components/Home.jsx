@@ -4,7 +4,9 @@ import profilePic from '../assets/profile.jpeg';
 const Home = () => {
   return (
     <section className="home" id="home">
-      <img src={profilePic} className="pfp" alt="Yazan Zarka" />
+      <div className="pfp-wrapper">
+        <img src={profilePic} className="pfp" alt="Yazan Zarka" />
+      </div>
 
       <h1>Yazan N. Zarka</h1>
       <h3>Software Engineering Student</h3>
