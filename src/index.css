@@ -1151,3 +1151,65 @@ section:last-of-type {
         height: 480px;
     }
 }
+
+/* ===== ANIMATION SYSTEM ===== */
+
+/* 1. Home entrance — sequential fade-up on load */
+@keyframes homeFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-animate {
+  opacity: 0;
+  animation: homeFadeInUp 0.65s ease-out forwards;
+}
+
+/* 2. Scroll-triggered section reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 3. Staggered skill tags */
+.skills-stagger .skill-tag {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.skills-stagger.skills-visible .skill-tag {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 5. Project slideshow hover lift — enhance existing */
+.project-slideshow {
+  transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.project-slideshow:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* 6. Experience card left-border highlight on hover */
+.experience-content {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.experience-content:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18), inset 4px 0 0 0 #3d8199 !important;
+}
