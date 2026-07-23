@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './index.css';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -12,6 +12,41 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    // 2. Scroll-triggered fade-in for sections
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08 }
+    );
+    revealEls.forEach((el) => revealObserver.observe(el));
+
+    // 3. Staggered skill tags
+    const skillsContainer = document.querySelector('.skills-stagger');
+    const skillsObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('skills-visible');
+          skillsObserver.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.15 }
+    );
+    if (skillsContainer) skillsObserver.observe(skillsContainer);
+
+    return () => {
+      revealObserver.disconnect();
+      skillsObserver.disconnect();
+    };
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
