@@ -840,7 +840,7 @@ section:last-of-type {
         padding: 80px 20px;
     }
     
-    .pfp {
+    .pfp-wrapper {
         width: 150px;
         height: 150px;
     }
@@ -977,7 +977,7 @@ section:last-of-type {
         padding: 70px 15px;
     }
     
-    .pfp {
+    .pfp-wrapper {
         width: 120px;
         height: 120px;
     }
