@@ -20,8 +20,10 @@ const skills = [
 ];
 
 const About = () => {
+  let tagIndex = 0;
+
   return (
-    <section className="about" id="about">
+    <section className="about reveal" id="about">
       <h1>About Me</h1>
       <div className="about-container">
         <div className="about-text">
@@ -44,14 +46,24 @@ const About = () => {
             technical depth and a global perspective to the table.
           </p>
         </div>
-        <div className="about-skills">
+        <div className="about-skills skills-stagger">
           {skills.map((group) => (
             <div key={group.category} className="skills-group">
               <h3>{group.category}</h3>
               <div className="skills-tags">
-                {group.items.map((skill) => (
-                  <span key={skill} className="skill-tag">{skill}</span>
-                ))}
+                {group.items.map((skill) => {
+                  const delay = tagIndex * 0.045;
+                  tagIndex++;
+                  return (
+                    <span
+                      key={skill}
+                      className="skill-tag"
+                      style={{ transitionDelay: `${delay}s` }}
+                    >
+                      {skill}
+                    </span>
+                  );
+                })}
               </div>
             </div>
           ))}
