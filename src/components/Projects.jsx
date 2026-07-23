@@ -43,7 +43,7 @@ const Projects = () => {
   });
 
   return (
-    <section className="projects" id="projects">
+    <section className="projects reveal" id="projects">
       <h1>Projects</h1>
       <div className="slideshow-wrapper">
         
