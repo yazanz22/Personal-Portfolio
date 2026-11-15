@@ -19,7 +19,7 @@ const Home = () => {
         <a href="#contact">
           <button className="contact-button">Contact Me</button>
         </a>
-        <a href="/Yazan Zarka - CV.pdf" download="Yazan Zarka - CV.pdf">
+        <a href="/Yazan Zarka - CV - 11152026.pdf" download="Yazan Zarka - CV.pdf">
           <button className="cv-button">Download CV</button>
         </a>
       </div>
